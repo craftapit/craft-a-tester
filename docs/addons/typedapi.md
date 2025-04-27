@@ -7,7 +7,7 @@ This addon provides specialized testing capabilities for TypedAPI contracts and 
 ## Installation
 
 ```bash
-npm install craft-a-tester-typedapi --save-dev
+npm install @craftapit/typedapi-tester-addon --save-dev
 ```
 
 ## Usage
@@ -15,8 +15,8 @@ npm install craft-a-tester-typedapi --save-dev
 ### Register the Addon
 
 ```typescript
-import { TestExecutor } from 'craft-a-tester';
-import { TypedAPIAddon } from 'craft-a-tester-typedapi';
+import { TestExecutor } from "@craftapit/tester";
+import { TypedAPIAddon } from "@craftapit/typedapi-tester-addon";
 
 const executor = new TestExecutor();
 executor.registerAddon(new TypedAPIAddon());

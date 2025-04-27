@@ -1,6 +1,6 @@
-import { TestExecutor, ScenarioParser, CraftACoderIntegration } from 'craft-a-tester';
-import { APIAdapter } from 'craft-a-tester';
-import { AnthropicAdapter } from 'craft-a-tester';
+import { TestExecutor, ScenarioParser, CraftACoderIntegration } from "@craftapit/tester";
+import { APIAdapter } from "@craftapit/tester";
+import { AnthropicAdapter } from "@craftapit/tester";
 import * as path from 'path';
 
 /**

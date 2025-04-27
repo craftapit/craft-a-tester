@@ -109,7 +109,7 @@ craftacoder generate --from-test ./tests/login-test.md
 ## API Usage
 
 ```typescript
-import { TestRunner } from 'craft-a-tester';
+import { TestRunner } from "@craftapit/tester";
 
 async function runTests() {
   const runner = new TestRunner({
@@ -135,7 +135,7 @@ runTests().catch(console.error);
 - API Tests: Test RESTful APIs with JSON payloads
 - Browser Tests: Test web UIs with automated browser interactions
 - Database Tests: Verify database operations and results
-- TypedAPI Tests: Test TypeScript API contracts (requires craft-a-tester-typedapi addon)
+- TypedAPI Tests: Test TypeScript API contracts (requires @craftapit/typedapi-tester-addon)
 
 ### Using Different LLM Providers
 
@@ -143,7 +143,7 @@ craft-a-tester supports multiple LLM providers:
 
 ```typescript
 // Using Anthropic
-import { AnthropicAdapter } from 'craft-a-tester';
+import { AnthropicAdapter } from "@craftapit/tester";
 
 const anthropicAdapter = new AnthropicAdapter({
   apiKey: process.env.ANTHROPIC_API_KEY,
@@ -153,7 +153,7 @@ const anthropicAdapter = new AnthropicAdapter({
 runner.registerAdapter('llm', anthropicAdapter);
 
 // Using OpenAI
-import { OpenAIAdapter } from 'craft-a-tester';
+import { OpenAIAdapter } from "@craftapit/tester";
 
 const openaiAdapter = new OpenAIAdapter({
   apiKey: process.env.OPENAI_API_KEY,
@@ -163,7 +163,7 @@ const openaiAdapter = new OpenAIAdapter({
 runner.registerAdapter('llm', openaiAdapter);
 
 // Using Ollama (local inference)
-import { OllamaAdapter } from 'craft-a-tester';
+import { OllamaAdapter } from "@craftapit/tester";
 
 const ollamaAdapter = new OllamaAdapter({
   baseUrl: 'http://localhost:11434',  // Your Ollama server URL
@@ -182,7 +182,7 @@ runner.registerAdapter('llm', ollamaAdapter);
 craft-a-tester includes a lightweight vector embedding system for caching test capabilities and results:
 
 ```typescript
-import { CapabilityRegistry } from 'craft-a-tester';
+import { CapabilityRegistry } from "@craftapit/tester";
 
 const registry = new CapabilityRegistry({
   cachingEnabled: true,
