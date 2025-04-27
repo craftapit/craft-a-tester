@@ -1,0 +1,12 @@
+node_modules/
+.git/
+tests/
+.gitignore
+.env
+.env.example
+tests/.env
+tests/.env.example
+.vscode/
+.DS_Store
+*.log
+tsconfig.json
