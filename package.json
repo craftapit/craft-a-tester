@@ -2,6 +2,9 @@
   "name": "@craftapit/tester",
   "version": "0.1.0",
   "description": "A focused, LLM-powered testing framework for natural language test scenarios",
+  "publishConfig": {
+    "access": "public"
+  },
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "bin": {
