@@ -7,3 +7,4 @@ tests/.env
 .DS_Store
 *.log
 coverage/
+.aider*
