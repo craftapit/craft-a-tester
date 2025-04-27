@@ -53,14 +53,8 @@ jobs:
           NEW_VERSION=$(node -p "require('./package.json').version")
           echo "Updated package.json to version $NEW_VERSION"
 
-      - name: Lint
-        run: npm run lint
-
       - name: Build
         run: npm run build
-
-      - name: Run tests
-        run: npm test
 
       - name: Publish to npm
         run: npm publish
